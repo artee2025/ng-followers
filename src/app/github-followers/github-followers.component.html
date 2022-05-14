@@ -1,0 +1,18 @@
+<div class="followers">
+  <div class="followers_bar">
+    <small>Use history. Click on imgs.</small>
+    <h2>Followers for {{username}}</h2>
+    <input type="text" id="uname" name="uname" #uname required (keyup.enter)="_getFollowers(uname.value)" value="{{username}}"> <input type="button" (click)="_getFollowers(uname.value)" value="Get followers">
+  </div>
+  <div class="follower_item" *ngFor="let follower of followers">
+    <div class="follower_item_id">{{follower.id}}</div>
+    <a [routerLink]="['/githubfollowers', follower.login]">
+    <img src="{{follower.avatar_url}}" class="follower_item_img" alt="{{follower.login}}">
+    </a>
+    <div class="follower_item_info">
+      <div class="follower_item_login">{{follower.login}}</div>
+      <div class="follower_item_url"><a href="{{follower.html_url}}" target="_blank">{{follower.html_url}}</a></div>
+    </div>
+  </div>
+</div>
+

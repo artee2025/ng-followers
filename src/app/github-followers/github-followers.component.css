@@ -1,0 +1,38 @@
+
+.followers{
+  padding-top: 20px;
+  width: 500px;
+  background-color: rgb(252, 252, 252);
+}
+.followers_bar{
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.follower_item{
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  display: flex;
+  padding: 10px;
+}
+.follower_item_id{
+  visibility: hidden;
+  width: 20px;
+}
+.follower_item_img{
+  width: 64px;
+  height: 64px;
+  border-radius: 64px;
+  flex-grow: 0;
+}
+.follower_item_info{
+  flex-grow: 1;
+  padding-left: 10px;
+}
+.follower_item_login{
+  font-size: 18px;
+  font-weight: bold;
+}
+.follower_item_url{
+  font-size: 10px;
+  color: aqua;
+}
